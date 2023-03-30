@@ -62,7 +62,7 @@ public class WeatherService {
 
     @CacheEvict(allEntries = true)
     @PostConstruct
-    @Scheduled(fixedRateString = "10000")
+    @Scheduled(fixedRateString = "1800000")
     public void clearCache() {
         logger.info("Cache cleared");
     }
